@@ -5,6 +5,11 @@ void main(){
 //1-10 -j , Q, K
   List<int> numbers = [1,2,3,4,5,6,7,8,9,10,11,12,13,];
   List<String> signs = ['Hearts','Diamonds','Clubs','Spade'];
+  print('enter your name');
+
+  var userName;
+  userName = stdin.readLineSync();
+
 
   Random numberCollection = Random();
   int numberIndex = numberCollection.nextInt(12);
@@ -38,14 +43,8 @@ void main(){
   String number = choice['Number'];
   String sign = choice["Sign"];
 
+  print("welcome $userName");
   print("your card is $number $sign");
-
-}
-
-
-
-
-
 
 }
 
